@@ -137,11 +137,6 @@ fun WoofTopAppBar(modifier: Modifier = Modifier) {
                 .size(64.dp)
                 .padding(8.dp),
             painter = painterResource(R.drawable.ic_woof_logo),
-            /*
-             * Content Description is not needed here - image is decorative, and setting a null
-             * content description allows accessibility services to skip this element during
-             * navigation.
-             */
             contentDescription = null
         )
         Text(
@@ -160,10 +155,6 @@ fun DogIcon(@DrawableRes dogIcon: Int, modifier: Modifier = Modifier) {
             .clip(RoundedCornerShape(50)),
         contentScale = ContentScale.Crop,
         painter = painterResource(dogIcon),
-        /*
-         * Content Description is not needed here - image is decorative, and setting a null content
-         * description allows accessibility services to skip this element during navigation.
-         */
         contentDescription = null
     )
 }
